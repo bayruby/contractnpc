@@ -8,12 +8,15 @@ import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
 import net.minecraft.resources.ResourceLocation;
 
 public class PlayerLikeNPCRenderer extends HumanoidMobRenderer<PlayerLikeNPC, HumanoidModel<PlayerLikeNPC>> {
+    private static final ResourceLocation TEXTURE = 
+        ResourceLocation.fromNamespaceAndPath("minecraft", "textures/entity/player/slim/alex.png");
+
     public PlayerLikeNPCRenderer(EntityRendererProvider.Context context) {
         super(context, new HumanoidModel<>(context.bakeLayer(ModelLayers.PLAYER)), 0.5F);
     }
 
     @Override
     public ResourceLocation getTextureLocation(PlayerLikeNPC entity) {
-        return new ResourceLocation("minecraft", "textures/entity/player/slim/alex.png");
+        return TEXTURE;
     }
 }
