@@ -34,7 +34,6 @@ public class MerchantContractItem extends Item {
         npc.setYRot(player.getYRot());
         npc.setCustomName(net.minecraft.network.chat.Component.literal("Merchant"));
         npc.setCustomNameVisible(true);
-        npc.setPersistenceRequired();
 
         if (!level.addFreshEntity(npc)) {
             return InteractionResultHolder.fail(stack);
