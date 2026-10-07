@@ -30,12 +30,14 @@ public class MerchantContractItem extends Item {
         villager.setPos(spawnPos.x, spawnPos.y, spawnPos.z);
         villager.setYRot(player.getYRot());
         villager.setCustomName(Component.literal("Merchant"));
+        villager.setCustomNameVisible(true);
+        villager.setPersistenceRequired();
 
         if (!level.addFreshEntity(villager)) {
             return InteractionResult.FAIL;
         }
 
-        // Do not consume the item; the contract acts like a spawn tool.
+        player.swing(hand, true);
         return InteractionResult.SUCCESS;
     }
 }
