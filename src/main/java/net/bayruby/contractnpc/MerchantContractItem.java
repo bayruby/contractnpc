@@ -1,5 +1,7 @@
 package net.bayruby.contractnpc;
 
+import net.bayruby.contractnpc.entity.ModEntities;
+import net.bayruby.contractnpc.entity.PlayerLikeNPC;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -7,8 +9,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-import net.bayruby.contractnpc.entity.ModEntities;
-import net.bayruby.contractnpc.entity.PlayerLikeNPC;
 
 public class MerchantContractItem extends Item {
     public MerchantContractItem(Properties properties) {

@@ -1,5 +1,9 @@
 package net.bayruby.contractnpc;
 
+import org.slf4j.Logger;
+
+import com.mojang.logging.LogUtils;
+
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.bayruby.contractnpc.entity.ModEntities;
@@ -14,8 +18,6 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import org.slf4j.Logger;
-import com.mojang.logging.LogUtils;
 
 @Mod(ContractNpc.MODID)
 public class ContractNpc {

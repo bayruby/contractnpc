@@ -27,7 +27,7 @@ public class PlayerLikeNPC extends LivingEntity {
 
     @Override
     protected void registerGoals() {
-        // This NPC is decorative and intentionally static.
+        // Decorative merchant NPC; intentionally static.
     }
 
     @Override
