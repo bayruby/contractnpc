@@ -12,7 +12,6 @@ import net.minecraft.world.level.Level;
 public class PlayerLikeNPC extends LivingEntity {
     public PlayerLikeNPC(EntityType<? extends LivingEntity> type, Level level) {
         super(type, level);
-        this.setPersistenceRequired();
         this.setNoGravity(true);
         this.setNoAi(true);
         this.setInvulnerable(true);
