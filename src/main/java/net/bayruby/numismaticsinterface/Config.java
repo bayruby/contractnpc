@@ -1,4 +1,4 @@
-package net.bayruby.contractnpc;
+package net.bayruby.numismaticsinterface;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
